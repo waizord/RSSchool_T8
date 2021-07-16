@@ -8,13 +8,15 @@
 #import "ViewController.h"
 
 @interface ViewController ()
-
+@property(nonatomic, strong) UILabel * label;
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.view.backgroundColor = UIColor.blueColor;
+    
     // Do any additional setup after loading the view.
 }
 
