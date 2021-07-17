@@ -52,6 +52,44 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2C47051226A3834F009E36D2 /* ArtistView */ = {
+			isa = PBXGroup;
+			children = (
+				2C60ACE626A1C8FD00FB0F17 /* ArtistViewController.h */,
+				2C60ACE726A1C8FD00FB0F17 /* ArtistViewController.m */,
+				2C47051326A38354009E36D2 /* PaleteView */,
+				2C47051426A38359009E36D2 /* TimerView */,
+			);
+			path = ArtistView;
+			sourceTree = "<group>";
+		};
+		2C47051326A38354009E36D2 /* PaleteView */ = {
+			isa = PBXGroup;
+			children = (
+				2C4704FF26A333D3009E36D2 /* PaleteViewController.h */,
+				2C47050026A333D3009E36D2 /* PaleteViewController.m */,
+			);
+			path = PaleteView;
+			sourceTree = "<group>";
+		};
+		2C47051426A38359009E36D2 /* TimerView */ = {
+			isa = PBXGroup;
+			children = (
+				2C47050D26A34B73009E36D2 /* TimerViewController.h */,
+				2C47050E26A34B73009E36D2 /* TimerViewController.m */,
+			);
+			path = TimerView;
+			sourceTree = "<group>";
+		};
+		2C47051526A3835D009E36D2 /* DrawingsView */ = {
+			isa = PBXGroup;
+			children = (
+				2C47050626A34574009E36D2 /* DrawingsViewController.h */,
+				2C47050726A34574009E36D2 /* DrawingsViewController.m */,
+			);
+			path = DrawingsView;
+			sourceTree = "<group>";
+		};
 		2C60ACD426A1C8FC00FB0F17 = {
 			isa = PBXGroup;
 			children = (
@@ -71,15 +109,9 @@
 		2C60ACDF26A1C8FD00FB0F17 /* RSSchool_T8 */ = {
 			isa = PBXGroup;
 			children = (
+				2C47051226A3834F009E36D2 /* ArtistView */,
+				2C47051526A3835D009E36D2 /* DrawingsView */,
 				2C60ACF126A1C90000FB0F17 /* Info.plist */,
-				2C60ACE626A1C8FD00FB0F17 /* ArtistViewController.h */,
-				2C60ACE726A1C8FD00FB0F17 /* ArtistViewController.m */,
-				2C4704FF26A333D3009E36D2 /* PaleteViewController.h */,
-				2C47050026A333D3009E36D2 /* PaleteViewController.m */,
-				2C47050626A34574009E36D2 /* DrawingsViewController.h */,
-				2C47050726A34574009E36D2 /* DrawingsViewController.m */,
-				2C47050D26A34B73009E36D2 /* TimerViewController.h */,
-				2C47050E26A34B73009E36D2 /* TimerViewController.m */,
 				2C60ACFA26A1CE1300FB0F17 /* Supports files */,
 			);
 			path = RSSchool_T8;
