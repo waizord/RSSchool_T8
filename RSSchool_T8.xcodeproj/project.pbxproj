@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C47050126A333D3009E36D2 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C47050026A333D3009E36D2 /* SecondViewController.m */; };
 		2C60ACE226A1C8FD00FB0F17 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C60ACE126A1C8FD00FB0F17 /* AppDelegate.m */; };
 		2C60ACE826A1C8FD00FB0F17 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C60ACE726A1C8FD00FB0F17 /* ViewController.m */; };
 		2C60ACEB26A1C8FD00FB0F17 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C60ACE926A1C8FD00FB0F17 /* Main.storyboard */; };
@@ -18,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2C4704FF26A333D3009E36D2 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		2C47050026A333D3009E36D2 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		2C60ACDD26A1C8FD00FB0F17 /* RSSchool_T8.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RSSchool_T8.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C60ACE026A1C8FD00FB0F17 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2C60ACE126A1C8FD00FB0F17 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -62,13 +65,11 @@
 		2C60ACDF26A1C8FD00FB0F17 /* RSSchool_T8 */ = {
 			isa = PBXGroup;
 			children = (
-				2C60ACE026A1C8FD00FB0F17 /* AppDelegate.h */,
-				2C60ACE126A1C8FD00FB0F17 /* AppDelegate.m */,
+				2C60ACF126A1C90000FB0F17 /* Info.plist */,
 				2C60ACE626A1C8FD00FB0F17 /* ViewController.h */,
 				2C60ACE726A1C8FD00FB0F17 /* ViewController.m */,
-				2C60ACE926A1C8FD00FB0F17 /* Main.storyboard */,
-				2C60ACEE26A1C90000FB0F17 /* LaunchScreen.storyboard */,
-				2C60ACF126A1C90000FB0F17 /* Info.plist */,
+				2C4704FF26A333D3009E36D2 /* SecondViewController.h */,
+				2C47050026A333D3009E36D2 /* SecondViewController.m */,
 				2C60ACFA26A1CE1300FB0F17 /* Supports files */,
 			);
 			path = RSSchool_T8;
@@ -77,6 +78,10 @@
 		2C60ACFA26A1CE1300FB0F17 /* Supports files */ = {
 			isa = PBXGroup;
 			children = (
+				2C60ACE926A1C8FD00FB0F17 /* Main.storyboard */,
+				2C60ACEE26A1C90000FB0F17 /* LaunchScreen.storyboard */,
+				2C60ACE026A1C8FD00FB0F17 /* AppDelegate.h */,
+				2C60ACE126A1C8FD00FB0F17 /* AppDelegate.m */,
 				2C60ACFD26A1D21300FB0F17 /* RSSchool_T8_Fonts */,
 				2C60ACEC26A1C90000FB0F17 /* Assets.xcassets */,
 				2C60ACF226A1C90000FB0F17 /* main.m */,
@@ -164,6 +169,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C47050126A333D3009E36D2 /* SecondViewController.m in Sources */,
 				2C60ACE826A1C8FD00FB0F17 /* ViewController.m in Sources */,
 				2C60ACE226A1C8FD00FB0F17 /* AppDelegate.m in Sources */,
 				2C60ACF326A1C90000FB0F17 /* main.m in Sources */,
@@ -243,7 +249,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -296,7 +302,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -312,6 +318,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M9V2HJR8B4;
 				INFOPLIST_FILE = RSSchool_T8/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -330,6 +337,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M9V2HJR8B4;
 				INFOPLIST_FILE = RSSchool_T8/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

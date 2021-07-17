@@ -18,8 +18,8 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     UIWindow *window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    ViewController *rootVC = [[ViewController alloc] init];
-    rootVC.view.backgroundColor = UIColor.blueColor;
+    UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    ViewController *rootVC = mainStoryboard.instantiateInitialViewController;
     [window setRootViewController:rootVC];
     self.window = window;
     [self.window makeKeyAndVisible];

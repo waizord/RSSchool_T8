@@ -6,6 +6,7 @@
 //
 
 #import "ViewController.h"
+#import "SecondViewController.h"
 
 @interface ViewController ()
 
@@ -15,9 +16,14 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    self.view.backgroundColor = UIColor.blueColor;
     // Do any additional setup after loading the view.
 }
 
+- (IBAction)tapOnSecondView:(id)sender {
+    SecondViewController *secondVC = [[SecondViewController alloc] init];
+    [self.splitViewController showDetailViewController:secondVC sender:self];
+    //[self.navigationController popToViewController:secondVC animated:YES];
+}
 
 @end
