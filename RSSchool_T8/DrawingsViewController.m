@@ -1,21 +1,20 @@
 //
-//  SecondViewController.m
+//  DrawingsViewController.m
 //  RSSchool_T8
 //
 //  Created by Ivan on 7/17/21.
 //
 
-#import "SecondViewController.h"
+#import "DrawingsViewController.h"
 
-@interface SecondViewController ()
+@interface DrawingsViewController ()
 
 @end
 
-@implementation SecondViewController
+@implementation DrawingsViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = UIColor.yellowColor;
     // Do any additional setup after loading the view.
 }
 

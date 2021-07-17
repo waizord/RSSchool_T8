@@ -7,9 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2C47050126A333D3009E36D2 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C47050026A333D3009E36D2 /* SecondViewController.m */; };
+		2C47050126A333D3009E36D2 /* PaleteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C47050026A333D3009E36D2 /* PaleteViewController.m */; };
+		2C47050826A34574009E36D2 /* DrawingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C47050726A34574009E36D2 /* DrawingsViewController.m */; };
+		2C47050F26A34B73009E36D2 /* TimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C47050E26A34B73009E36D2 /* TimerViewController.m */; };
 		2C60ACE226A1C8FD00FB0F17 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C60ACE126A1C8FD00FB0F17 /* AppDelegate.m */; };
-		2C60ACE826A1C8FD00FB0F17 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C60ACE726A1C8FD00FB0F17 /* ViewController.m */; };
+		2C60ACE826A1C8FD00FB0F17 /* ArtistViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C60ACE726A1C8FD00FB0F17 /* ArtistViewController.m */; };
 		2C60ACEB26A1C8FD00FB0F17 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C60ACE926A1C8FD00FB0F17 /* Main.storyboard */; };
 		2C60ACED26A1C90000FB0F17 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C60ACEC26A1C90000FB0F17 /* Assets.xcassets */; };
 		2C60ACF026A1C90000FB0F17 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C60ACEE26A1C90000FB0F17 /* LaunchScreen.storyboard */; };
@@ -19,13 +21,17 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2C4704FF26A333D3009E36D2 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		2C47050026A333D3009E36D2 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		2C4704FF26A333D3009E36D2 /* PaleteViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PaleteViewController.h; sourceTree = "<group>"; };
+		2C47050026A333D3009E36D2 /* PaleteViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PaleteViewController.m; sourceTree = "<group>"; };
+		2C47050626A34574009E36D2 /* DrawingsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DrawingsViewController.h; sourceTree = "<group>"; };
+		2C47050726A34574009E36D2 /* DrawingsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DrawingsViewController.m; sourceTree = "<group>"; };
+		2C47050D26A34B73009E36D2 /* TimerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TimerViewController.h; sourceTree = "<group>"; };
+		2C47050E26A34B73009E36D2 /* TimerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TimerViewController.m; sourceTree = "<group>"; };
 		2C60ACDD26A1C8FD00FB0F17 /* RSSchool_T8.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RSSchool_T8.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C60ACE026A1C8FD00FB0F17 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2C60ACE126A1C8FD00FB0F17 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		2C60ACE626A1C8FD00FB0F17 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		2C60ACE726A1C8FD00FB0F17 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		2C60ACE626A1C8FD00FB0F17 /* ArtistViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArtistViewController.h; sourceTree = "<group>"; };
+		2C60ACE726A1C8FD00FB0F17 /* ArtistViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArtistViewController.m; sourceTree = "<group>"; };
 		2C60ACEA26A1C8FD00FB0F17 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2C60ACEC26A1C90000FB0F17 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2C60ACEF26A1C90000FB0F17 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -66,10 +72,14 @@
 			isa = PBXGroup;
 			children = (
 				2C60ACF126A1C90000FB0F17 /* Info.plist */,
-				2C60ACE626A1C8FD00FB0F17 /* ViewController.h */,
-				2C60ACE726A1C8FD00FB0F17 /* ViewController.m */,
-				2C4704FF26A333D3009E36D2 /* SecondViewController.h */,
-				2C47050026A333D3009E36D2 /* SecondViewController.m */,
+				2C60ACE626A1C8FD00FB0F17 /* ArtistViewController.h */,
+				2C60ACE726A1C8FD00FB0F17 /* ArtistViewController.m */,
+				2C4704FF26A333D3009E36D2 /* PaleteViewController.h */,
+				2C47050026A333D3009E36D2 /* PaleteViewController.m */,
+				2C47050626A34574009E36D2 /* DrawingsViewController.h */,
+				2C47050726A34574009E36D2 /* DrawingsViewController.m */,
+				2C47050D26A34B73009E36D2 /* TimerViewController.h */,
+				2C47050E26A34B73009E36D2 /* TimerViewController.m */,
 				2C60ACFA26A1CE1300FB0F17 /* Supports files */,
 			);
 			path = RSSchool_T8;
@@ -169,8 +179,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2C47050126A333D3009E36D2 /* SecondViewController.m in Sources */,
-				2C60ACE826A1C8FD00FB0F17 /* ViewController.m in Sources */,
+				2C47050F26A34B73009E36D2 /* TimerViewController.m in Sources */,
+				2C47050126A333D3009E36D2 /* PaleteViewController.m in Sources */,
+				2C47050826A34574009E36D2 /* DrawingsViewController.m in Sources */,
+				2C60ACE826A1C8FD00FB0F17 /* ArtistViewController.m in Sources */,
 				2C60ACE226A1C8FD00FB0F17 /* AppDelegate.m in Sources */,
 				2C60ACF326A1C90000FB0F17 /* main.m in Sources */,
 			);

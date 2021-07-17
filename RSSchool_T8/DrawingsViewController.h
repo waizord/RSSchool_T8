@@ -1,15 +1,15 @@
 //
-//  SecondViewController.h
+//  DrawingsViewController.h
 //  RSSchool_T8
 //
 //  Created by Ivan on 7/17/21.
 //
 
-#import "ViewController.h"
+#import <UIKit/UIKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface SecondViewController : ViewController
+@interface DrawingsViewController : UIViewController
 
 @end
 

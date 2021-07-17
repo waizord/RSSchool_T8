@@ -6,7 +6,7 @@
 //
 
 #import "AppDelegate.h"
-#import "ViewController.h"
+#import "ArtistViewController.h"
 
 @interface AppDelegate ()
 
@@ -19,7 +19,7 @@
     // Override point for customization after application launch.
     UIWindow *window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-    ViewController *rootVC = mainStoryboard.instantiateInitialViewController;
+    ArtistViewController *rootVC = mainStoryboard.instantiateInitialViewController;
     [window setRootViewController:rootVC];
     self.window = window;
     [self.window makeKeyAndVisible];
