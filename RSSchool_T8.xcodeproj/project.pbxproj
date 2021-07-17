@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2C47050126A333D3009E36D2 /* PaleteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C47050026A333D3009E36D2 /* PaleteViewController.m */; };
+		2C47050126A333D3009E36D2 /* PaletteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C47050026A333D3009E36D2 /* PaletteViewController.m */; };
 		2C47050826A34574009E36D2 /* DrawingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C47050726A34574009E36D2 /* DrawingsViewController.m */; };
 		2C47050F26A34B73009E36D2 /* TimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C47050E26A34B73009E36D2 /* TimerViewController.m */; };
 		2C60ACE226A1C8FD00FB0F17 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C60ACE126A1C8FD00FB0F17 /* AppDelegate.m */; };
@@ -21,8 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2C4704FF26A333D3009E36D2 /* PaleteViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PaleteViewController.h; sourceTree = "<group>"; };
-		2C47050026A333D3009E36D2 /* PaleteViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PaleteViewController.m; sourceTree = "<group>"; };
+		2C4704FF26A333D3009E36D2 /* PaletteViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PaletteViewController.h; sourceTree = "<group>"; };
+		2C47050026A333D3009E36D2 /* PaletteViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PaletteViewController.m; sourceTree = "<group>"; };
 		2C47050626A34574009E36D2 /* DrawingsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DrawingsViewController.h; sourceTree = "<group>"; };
 		2C47050726A34574009E36D2 /* DrawingsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DrawingsViewController.m; sourceTree = "<group>"; };
 		2C47050D26A34B73009E36D2 /* TimerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TimerViewController.h; sourceTree = "<group>"; };
@@ -66,8 +66,8 @@
 		2C47051326A38354009E36D2 /* PaleteView */ = {
 			isa = PBXGroup;
 			children = (
-				2C4704FF26A333D3009E36D2 /* PaleteViewController.h */,
-				2C47050026A333D3009E36D2 /* PaleteViewController.m */,
+				2C4704FF26A333D3009E36D2 /* PaletteViewController.h */,
+				2C47050026A333D3009E36D2 /* PaletteViewController.m */,
 			);
 			path = PaleteView;
 			sourceTree = "<group>";
@@ -111,8 +111,8 @@
 			children = (
 				2C47051226A3834F009E36D2 /* ArtistView */,
 				2C47051526A3835D009E36D2 /* DrawingsView */,
-				2C60ACF126A1C90000FB0F17 /* Info.plist */,
 				2C60ACFA26A1CE1300FB0F17 /* Supports files */,
+				2C60ACF126A1C90000FB0F17 /* Info.plist */,
 			);
 			path = RSSchool_T8;
 			sourceTree = "<group>";
@@ -212,7 +212,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2C47050F26A34B73009E36D2 /* TimerViewController.m in Sources */,
-				2C47050126A333D3009E36D2 /* PaleteViewController.m in Sources */,
+				2C47050126A333D3009E36D2 /* PaletteViewController.m in Sources */,
 				2C47050826A34574009E36D2 /* DrawingsViewController.m in Sources */,
 				2C60ACE826A1C8FD00FB0F17 /* ArtistViewController.m in Sources */,
 				2C60ACE226A1C8FD00FB0F17 /* AppDelegate.m in Sources */,

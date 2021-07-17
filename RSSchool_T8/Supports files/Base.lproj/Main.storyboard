@@ -9,15 +9,18 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
+        <array key="Montserrat-Medium.ttf">
+            <string>Montserrat-Medium</string>
+        </array>
         <array key="Montserrat-Regular.ttf">
             <string>Montserrat-Regular</string>
         </array>
     </customFonts>
     <scenes>
-        <!--Palete View Controller-->
+        <!--Palette View Controller-->
         <scene sceneID="yk0-Mx-B4B">
             <objects>
-                <viewController id="Gmd-Mz-wvS" customClass="PaleteViewController" sceneMemberID="viewController">
+                <viewController id="Gmd-Mz-wvS" customClass="PaletteViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="KW7-GO-qTA">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -70,51 +73,112 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hdB-YD-fxC">
-                                <rect key="frame" x="49" y="398" width="98" height="102"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hdB-YD-fxC">
+                                <rect key="frame" x="20" y="424" width="163" height="32"/>
                                 <color key="backgroundColor" red="0.94509803920000002" green="0.62352941179999999" blue="0.23176470590000001" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Button"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="Ro3-ig-v24"/>
+                                    <constraint firstAttribute="width" constant="163" id="gUk-it-f7U"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="18"/>
+                                <state key="normal" title="Open Palette"/>
                                 <connections>
-                                    <action selector="tapOnPaleteView:" destination="ONr-Cw-x46" eventType="touchUpInside" id="Ktt-0U-ssj"/>
+                                    <action selector="openPaletteView:" destination="ONr-Cw-x46" eventType="touchUpInside" id="Ktt-0U-ssj"/>
                                     <segue destination="Gmd-Mz-wvS" kind="presentation" id="kdD-uA-01k"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f8D-if-yKG">
-                                <rect key="frame" x="167" y="87" width="91" height="78"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f8D-if-yKG">
+                                <rect key="frame" x="243" y="424" width="91" height="32"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
-                                <state key="normal" title="Button"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="91" id="GCK-2Z-he3"/>
+                                    <constraint firstAttribute="height" constant="32" id="dbb-4A-ZWg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="18"/>
+                                <state key="normal" title="Draw"/>
                                 <connections>
-                                    <action selector="tapOnDrawingsView:" destination="ONr-Cw-x46" eventType="touchUpInside" id="N4s-tm-UxB"/>
-                                    <segue destination="c0j-It-rMS" kind="show" id="BAd-3k-Zad"/>
+                                    <action selector="drawView:" destination="ONr-Cw-x46" eventType="touchUpInside" id="N4s-tm-UxB"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ifC-Ez-Kyl">
-                                <rect key="frame" x="47" y="537" width="102" height="63"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ifC-Ez-Kyl">
+                                <rect key="frame" x="20" y="476" width="151" height="32"/>
                                 <color key="backgroundColor" red="0.94509803920000002" green="0.62352941179999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Button"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="4KF-Ho-kYm"/>
+                                    <constraint firstAttribute="width" constant="151" id="QXZ-1U-nw8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="18"/>
+                                <state key="normal" title="Open Timer"/>
                                 <connections>
-                                    <action selector="timerButton:" destination="ONr-Cw-x46" eventType="touchUpInside" id="6Mf-7P-fl3"/>
+                                    <action selector="openTimerView:" destination="ONr-Cw-x46" eventType="touchUpInside" id="6Mf-7P-fl3"/>
                                     <segue destination="18M-2r-kiB" kind="presentation" id="YN6-IA-lN5"/>
                                 </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wBc-Xi-hhQ">
+                                <rect key="frame" x="37.5" y="84" width="300" height="300"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="Hrq-d4-Pvf"/>
+                                    <constraint firstAttribute="height" constant="300" id="bXh-Nm-PEe"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yM3-51-MTV">
+                                <rect key="frame" x="239" y="476" width="95" height="32"/>
+                                <color key="backgroundColor" red="0.94509803920000002" green="0.50588235290000005" blue="0.23137254900000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="95" id="OFh-Yz-vAg"/>
+                                    <constraint firstAttribute="height" constant="32" id="R83-QJ-2V4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="18"/>
+                                <state key="normal" title="Share"/>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="hYl-c2-EPM"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="hYl-c2-EPM" firstAttribute="trailing" secondItem="f8D-if-yKG" secondAttribute="trailing" constant="41" id="3Ya-SQ-SX2"/>
+                            <constraint firstItem="ifC-Ez-Kyl" firstAttribute="top" secondItem="hdB-YD-fxC" secondAttribute="bottom" constant="20" id="MRW-5N-Bhr"/>
+                            <constraint firstItem="hdB-YD-fxC" firstAttribute="top" secondItem="wBc-Xi-hhQ" secondAttribute="bottom" constant="40" id="N1k-fQ-s4Z"/>
+                            <constraint firstItem="wBc-Xi-hhQ" firstAttribute="centerX" secondItem="aqZ-yZ-sXc" secondAttribute="centerX" id="TN8-Rh-0EV"/>
+                            <constraint firstItem="wBc-Xi-hhQ" firstAttribute="top" secondItem="hYl-c2-EPM" secondAttribute="top" constant="40" id="YsO-vk-V4D"/>
+                            <constraint firstItem="f8D-if-yKG" firstAttribute="top" secondItem="wBc-Xi-hhQ" secondAttribute="bottom" constant="40" id="eLf-Q3-vT4"/>
+                            <constraint firstItem="yM3-51-MTV" firstAttribute="top" secondItem="f8D-if-yKG" secondAttribute="bottom" constant="20" id="hhQ-dL-rr6"/>
+                            <constraint firstItem="hYl-c2-EPM" firstAttribute="trailing" secondItem="yM3-51-MTV" secondAttribute="trailing" constant="41" id="mbU-Hv-CSE"/>
+                            <constraint firstItem="hdB-YD-fxC" firstAttribute="leading" secondItem="hYl-c2-EPM" secondAttribute="leading" constant="20" id="wJP-hZ-fqN"/>
+                            <constraint firstItem="ifC-Ez-Kyl" firstAttribute="leading" secondItem="hYl-c2-EPM" secondAttribute="leading" constant="20" id="y2E-9J-0XW"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="Ap5-Er-P9l"/>
+                    <navigationItem key="navigationItem" id="Ap5-Er-P9l">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="5QQ-Ha-kbh">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="NyJ-jO-q85">
+                                <rect key="frame" x="276" y="5.5" width="83" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
+                                <state key="normal" title="Drawings"/>
+                                <connections>
+                                    <action selector="showDravingsView:" destination="ONr-Cw-x46" eventType="touchUpInside" id="3r5-yD-0Ym"/>
+                                    <segue destination="c0j-It-rMS" kind="show" id="nir-EN-dt8"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="canvasView" destination="wBc-Xi-hhQ" id="MEi-V6-y6j"/>
+                        <outlet property="drawButton" destination="f8D-if-yKG" id="o45-ux-dKh"/>
+                        <outlet property="openPaletteButton" destination="hdB-YD-fxC" id="Ic7-tJ-qXj"/>
+                        <outlet property="openTimerButton" destination="ifC-Ez-Kyl" id="916-eB-B0U"/>
+                        <outlet property="rightNavButton" destination="NyJ-jO-q85" id="znb-DS-qhQ"/>
+                        <outlet property="shareButton" destination="yM3-51-MTV" id="lhm-Ih-Mcg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="F0c-kg-8ew" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="792.79999999999995" y="352.17391304347831"/>
         </scene>
-        <!--Drawings View Controller-->
+        <!--View Controller-->
         <scene sceneID="rw1-0n-7Mh">
             <objects>
-                <viewController id="c0j-It-rMS" customClass="DrawingsViewController" sceneMemberID="viewController">
+                <viewController id="c0j-It-rMS" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nHE-hN-zbX">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -134,6 +198,9 @@
         </systemColor>
         <systemColor name="systemGreenColor">
             <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

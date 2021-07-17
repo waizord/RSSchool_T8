@@ -5,13 +5,13 @@
 //  Created by Ivan on 7/17/21.
 //
 
-#import "PaleteViewController.h"
+#import "PaletteViewController.h"
 
-@interface PaleteViewController ()
+@interface PaletteViewController ()
 
 @end
 
-@implementation PaleteViewController
+@implementation PaletteViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
