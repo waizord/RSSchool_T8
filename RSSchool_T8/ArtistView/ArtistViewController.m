@@ -9,8 +9,9 @@
 #import "PaletteViewController.h"
 #import "DrawingsViewController.h"
 #import "TimerViewController.h"
+#import "HalfSizePresentationController.h"
 
-@interface ArtistViewController ()
+@interface ArtistViewController () <UIViewControllerTransitioningDelegate>
 @property (weak, nonatomic) IBOutlet UIView *canvasView;
 @property (weak, nonatomic) IBOutlet UIButton *openPaletteButton;
 @property (weak, nonatomic) IBOutlet UIButton *openTimerButton;
@@ -31,8 +32,12 @@
 
 //MARK: - Actions
 - (IBAction)openPaletteView:(id)sender {
-//    PaletteViewController *paletteVC = [[PaletteViewController alloc] init];
-//    [self addChildViewController:paletteVC];
+    PaletteViewController *paletteVC = [[PaletteViewController alloc] init];
+    paletteVC.transitioningDelegate = self;
+    paletteVC.modalPresentationStyle = UIModalPresentationCustom;
+    //paletteVC.modalPresentationStyle = UIModalTransitionStyleFlipHorizontal;
+    //[self addChildViewController:paletteVC];
+    [self presentViewController:paletteVC animated:YES completion:nil];
 }
 - (IBAction)drawView:(id)sender {
     NSLog(@"Tap");
@@ -45,6 +50,11 @@
     NSLog(@"show");
 //    DrawingsViewController *drawVC = [[DrawingsViewController alloc] init];
 //    [self.navigationController popToViewController:drawVC animated:YES];
+}
+//MARK: - Delegates
+-(UIPresentationController *)presentationControllerForPresentedViewController:(UIViewController *)presented presentingViewController:(UIViewController *)presenting sourceViewController:(UIViewController *)source {
+    
+    return [[HalfSizePresentationController alloc] initWithPresentedViewController:presented presentingViewController:presenting];
 }
 //MARK: - Styles
 
