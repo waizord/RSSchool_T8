@@ -18,6 +18,25 @@
     // Do any additional setup after loading the view.
 }
 
+-(void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:true];
+    [self settingsNavBar];
+}
+//MARK: NavigationBarStyles
+-(void)settingsNavBar {
+    UILabel *label = [[UILabel alloc] initWithFrame:CGRectZero];
+    label.backgroundColor = [UIColor clearColor];
+    label.font = [UIFont fontWithName:@"Montserrat-Regular" size:17];
+    label.textAlignment = NSTextAlignmentCenter;
+    label.textColor = [UIColor blackColor];
+    self.navigationItem.titleView = label;
+    label.text = @"Drawings";
+    [label sizeToFit];
+    
+    [self.navigationController.navigationBar setTintColor: UIColor.greenColor];
+    
+}
+
 /*
 #pragma mark - Navigation
 

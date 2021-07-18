@@ -31,20 +31,20 @@
 
 //MARK: - Actions
 - (IBAction)openPaletteView:(id)sender {
-    PaletteViewController *paletteVC = [[PaletteViewController alloc] init];
-    [self addChildViewController:paletteVC];
+//    PaletteViewController *paletteVC = [[PaletteViewController alloc] init];
+//    [self addChildViewController:paletteVC];
 }
 - (IBAction)drawView:(id)sender {
     NSLog(@"Tap");
 }
 - (IBAction)openTimerView:(id)sender {
-    TimerViewController *timerVC = [[TimerViewController alloc] init];
-    [self addChildViewController:timerVC];
+//    TimerViewController *timerVC = [[TimerViewController alloc] init];
+//    [self addChildViewController:timerVC];
 }
 - (IBAction)showDravingsView:(id)sender {
     NSLog(@"show");
-    DrawingsViewController *drawVC = [[DrawingsViewController alloc] init];
-    [self addChildViewController:drawVC];
+//    DrawingsViewController *drawVC = [[DrawingsViewController alloc] init];
+//    [self.navigationController popToViewController:drawVC animated:YES];
 }
 //MARK: - Styles
 
@@ -53,18 +53,15 @@
     UILabel *label = [[UILabel alloc] initWithFrame:CGRectZero];
     label.backgroundColor = [UIColor clearColor];
     label.font = [UIFont fontWithName:@"Montserrat-Regular" size:17];
-    //label.shadowColor = [UIColor colorWithWhite:0.0 alpha:0.5];
     label.textAlignment = NSTextAlignmentCenter;
     label.textColor = [UIColor blackColor];
     self.navigationItem.titleView = label;
     label.text = @"Artist";
     [label sizeToFit];
     
-//    UIBarButtonItem *button = [[UIBarButtonItem alloc] initWithTitle:@"Drawings" style:UIBarButtonItemStylePlain target:self action:@selector(showDrawingsController)];
-//    [button setTitleTextAttributes:@{
-//        NSFontAttributeName: [UIFont fontWithName:@"Montserrat-Regular" size:17.0],
-//        NSForegroundColorAttributeName: [UIColor greenColor]
-//    } forState:UIControlStateNormal];
-//    self.navigationItem.rightBarButtonItem = button;
+    self.title = @"Artist";
+    
+    NSAttributedString *string = [[NSAttributedString alloc] initWithString:@"Drawings" attributes:@{ NSForegroundColorAttributeName: [UIColor greenColor] }];
+    [self.rightNavButton setAttributedTitle:string forState:UIControlStateNormal];
 }
 @end

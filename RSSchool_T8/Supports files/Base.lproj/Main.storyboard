@@ -56,6 +56,8 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="uqS-sq-Tlm">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </navigationBar>
                     <connections>
                         <segue destination="ONr-Cw-x46" kind="relationship" relationship="rootViewController" id="9qw-PH-6Ca"/>
@@ -149,7 +151,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Ap5-Er-P9l">
-                        <barButtonItem key="rightBarButtonItem" style="plain" id="5QQ-Ha-kbh">
+                        <barButtonItem key="rightBarButtonItem" style="done" id="5QQ-Ha-kbh">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="NyJ-jO-q85">
                                 <rect key="frame" x="276" y="5.5" width="83" height="33"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -157,7 +159,7 @@
                                 <state key="normal" title="Drawings"/>
                                 <connections>
                                     <action selector="showDravingsView:" destination="ONr-Cw-x46" eventType="touchUpInside" id="3r5-yD-0Ym"/>
-                                    <segue destination="c0j-It-rMS" kind="show" id="nir-EN-dt8"/>
+                                    <segue destination="c0j-It-rMS" kind="show" id="XLh-pz-ciH"/>
                                 </connections>
                             </button>
                         </barButtonItem>
@@ -175,10 +177,10 @@
             </objects>
             <point key="canvasLocation" x="792.79999999999995" y="352.17391304347831"/>
         </scene>
-        <!--View Controller-->
+        <!--Drawings View Controller-->
         <scene sceneID="rw1-0n-7Mh">
             <objects>
-                <viewController id="c0j-It-rMS" sceneMemberID="viewController">
+                <viewController id="c0j-It-rMS" customClass="DrawingsViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nHE-hN-zbX">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
