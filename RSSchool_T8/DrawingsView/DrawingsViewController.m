@@ -8,6 +8,10 @@
 #import "DrawingsViewController.h"
 
 @interface DrawingsViewController ()
+@property (weak, nonatomic) IBOutlet UIButton *planetButton;
+@property (weak, nonatomic) IBOutlet UIButton *headButton;
+@property (weak, nonatomic) IBOutlet UIButton *treeButton;
+@property (weak, nonatomic) IBOutlet UIButton *landscapeButton;
 
 @end
 
@@ -22,6 +26,13 @@
     [super viewWillAppear:true];
     [self settingsNavBar];
 }
+//MARK: - Actions
+- (IBAction)pictureSelectTag:(id)sender {
+    NSLog(@"%lu", [sender tag]);
+}
+
+//MARK: - Styles
+
 //MARK: NavigationBarStyles
 -(void)settingsNavBar {
     UILabel *label = [[UILabel alloc] initWithFrame:CGRectZero];
