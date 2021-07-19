@@ -11,6 +11,7 @@
 		2C47050826A34574009E36D2 /* DrawingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C47050726A34574009E36D2 /* DrawingsViewController.m */; };
 		2C47050F26A34B73009E36D2 /* TimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C47050E26A34B73009E36D2 /* TimerViewController.m */; };
 		2C5A93AD26A4637E00AA0AFF /* HalfSizePresentationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C5A93AC26A4637E00AA0AFF /* HalfSizePresentationController.m */; };
+		2C5A93B326A5093600AA0AFF /* PaletteButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C5A93B226A5093600AA0AFF /* PaletteButton.m */; };
 		2C60ACE226A1C8FD00FB0F17 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C60ACE126A1C8FD00FB0F17 /* AppDelegate.m */; };
 		2C60ACE826A1C8FD00FB0F17 /* ArtistViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C60ACE726A1C8FD00FB0F17 /* ArtistViewController.m */; };
 		2C60ACEB26A1C8FD00FB0F17 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C60ACE926A1C8FD00FB0F17 /* Main.storyboard */; };
@@ -30,6 +31,8 @@
 		2C47050E26A34B73009E36D2 /* TimerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TimerViewController.m; sourceTree = "<group>"; };
 		2C5A93AB26A4637E00AA0AFF /* HalfSizePresentationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HalfSizePresentationController.h; sourceTree = "<group>"; };
 		2C5A93AC26A4637E00AA0AFF /* HalfSizePresentationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HalfSizePresentationController.m; sourceTree = "<group>"; };
+		2C5A93B126A5093600AA0AFF /* PaletteButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PaletteButton.h; sourceTree = "<group>"; };
+		2C5A93B226A5093600AA0AFF /* PaletteButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PaletteButton.m; sourceTree = "<group>"; };
 		2C60ACDD26A1C8FD00FB0F17 /* RSSchool_T8.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RSSchool_T8.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C60ACE026A1C8FD00FB0F17 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2C60ACE126A1C8FD00FB0F17 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -72,6 +75,8 @@
 			children = (
 				2C4704FF26A333D3009E36D2 /* PaletteViewController.h */,
 				2C47050026A333D3009E36D2 /* PaletteViewController.m */,
+				2C5A93B126A5093600AA0AFF /* PaletteButton.h */,
+				2C5A93B226A5093600AA0AFF /* PaletteButton.m */,
 			);
 			path = PaleteView;
 			sourceTree = "<group>";
@@ -227,6 +232,7 @@
 				2C5A93AD26A4637E00AA0AFF /* HalfSizePresentationController.m in Sources */,
 				2C47050F26A34B73009E36D2 /* TimerViewController.m in Sources */,
 				2C47050126A333D3009E36D2 /* PaletteViewController.m in Sources */,
+				2C5A93B326A5093600AA0AFF /* PaletteButton.m in Sources */,
 				2C47050826A34574009E36D2 /* DrawingsViewController.m in Sources */,
 				2C60ACE826A1C8FD00FB0F17 /* ArtistViewController.m in Sources */,
 				2C60ACE226A1C8FD00FB0F17 /* AppDelegate.m in Sources */,

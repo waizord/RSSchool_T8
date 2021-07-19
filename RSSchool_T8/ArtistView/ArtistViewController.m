@@ -35,8 +35,6 @@
     PaletteViewController *paletteVC = [[PaletteViewController alloc] init];
     paletteVC.transitioningDelegate = self;
     paletteVC.modalPresentationStyle = UIModalPresentationCustom;
-    //paletteVC.modalPresentationStyle = UIModalTransitionStyleFlipHorizontal;
-    //[self addChildViewController:paletteVC];
     [self presentViewController:paletteVC animated:YES completion:nil];
 }
 - (IBAction)drawView:(id)sender {

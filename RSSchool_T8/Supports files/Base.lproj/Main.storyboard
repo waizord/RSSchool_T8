@@ -17,21 +17,37 @@
         </array>
     </customFonts>
     <scenes>
-        <!--Palette View Controller-->
+        <!--View Controller-->
         <scene sceneID="yk0-Mx-B4B">
             <objects>
-                <viewController id="Gmd-Mz-wvS" customClass="PaletteViewController" sceneMemberID="viewController">
+                <viewController id="Gmd-Mz-wvS" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="KW7-GO-qTA">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iLh-56-Ylx">
+                                <rect key="frame" x="250" y="353.5" width="85" height="32"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="1my-yP-Dqo"/>
+                                    <constraint firstAttribute="width" constant="85" id="bm3-DT-hkj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="18"/>
+                                <state key="normal" title="Save"/>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="l6i-71-SeP"/>
                         <color key="backgroundColor" systemColor="systemGreenColor"/>
+                        <constraints>
+                            <constraint firstItem="l6i-71-SeP" firstAttribute="bottom" secondItem="iLh-56-Ylx" secondAttribute="bottom" constant="281.5" id="QUZ-hj-PEL"/>
+                            <constraint firstItem="l6i-71-SeP" firstAttribute="trailing" secondItem="iLh-56-Ylx" secondAttribute="trailing" constant="40" id="r9H-oJ-9T3"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="pas-xn-fu0"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AN9-Xb-qaw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="310" y="1032"/>
+            <point key="canvasLocation" x="309.60000000000002" y="1030.4347826086957"/>
         </scene>
         <!--Timer View Controller-->
         <scene sceneID="0v6-UX-jqX">
@@ -86,7 +102,6 @@
                                 <state key="normal" title="Open Palette"/>
                                 <connections>
                                     <action selector="openPaletteView:" destination="ONr-Cw-x46" eventType="touchUpInside" id="Ktt-0U-ssj"/>
-                                    <segue destination="Gmd-Mz-wvS" kind="presentation" id="kdD-uA-01k"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f8D-if-yKG">
