@@ -19,6 +19,8 @@
 @property (weak, nonatomic) IBOutlet UIButton *shareButton;
 @property (weak, nonatomic) IBOutlet UIButton *rightNavButton;
 
+@property (nonatomic, readwrite) UIView *canvasDrawView;
+
 @property (nonatomic, readonly) UIColor *lightGreenSea;
 @property (nonatomic, readonly) UIColor *chillSky;
 
@@ -38,13 +40,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    // Do any additional setup after loading the view.
 }
 
 -(void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:true];
     [self buttonsStyle];
     [self settingsNavBar];
+    [self canvasStyle];
 }
 
 //MARK: - Actions
@@ -111,8 +113,22 @@
     self.shareButton.layer.shadowOffset = CGSizeZero;
     self.shareButton.layer.shadowOpacity = 1.0;
     [self.shareButton setTitleColor:self.lightGreenSea forState:UIControlStateNormal];
+}
+
+-(void) canvasStyle {
+    self.canvasDrawView = [[UIView alloc] initWithFrame:self.canvasView.bounds];
+    self.canvasDrawView.backgroundColor = UIColor.whiteColor;
+    self.canvasDrawView.layer.cornerRadius = 8;
     
+    self.canvasView.backgroundColor = UIColor.whiteColor;
+    UIColor *chullSkyShadow = [self.chillSky colorWithAlphaComponent:0.25];
+    self.canvasView.layer.cornerRadius = 8;
+    self.canvasView.layer.shadowColor = chullSkyShadow.CGColor;
+    self.canvasView.layer.shadowRadius = 8.0;
+    self.canvasView.layer.shadowOffset = CGSizeZero;
+    self.canvasView.layer.shadowOpacity = 1.0;
     
+    [self.canvasView addSubview:self.canvasDrawView];
 }
 //MARK: NavigationBarStyles
 -(void)settingsNavBar {
