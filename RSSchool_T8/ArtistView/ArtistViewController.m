@@ -19,14 +19,32 @@
 @property (weak, nonatomic) IBOutlet UIButton *shareButton;
 @property (weak, nonatomic) IBOutlet UIButton *rightNavButton;
 
+@property (nonatomic, readonly) UIColor *lightGreenSea;
+@property (nonatomic, readonly) UIColor *chillSky;
+
 @end
 
 @implementation ArtistViewController
 
+//MARK: Constants
+- (UIColor *)lightGreenSea {
+    return [[UIColor alloc] initWithRed:0.13 green:0.692 blue:0.557 alpha:1];
+}
+- (UIColor *)chillSky {
+    return [[UIColor alloc] initWithRed:0.0 green:0.7 blue:1.0 alpha:1];
+}
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self settingsNavBar];
+    
     // Do any additional setup after loading the view.
+}
+
+-(void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:true];
+    [self buttonsStyle];
+    [self settingsNavBar];
 }
 
 //MARK: - Actions
@@ -54,7 +72,46 @@
     return [[HalfSizePresentationController alloc] initWithPresentedViewController:presented presentingViewController:presenting];
 }
 //MARK: - Styles
-
+-(void) buttonsStyle {
+    
+    self.openPaletteButton.backgroundColor = UIColor.whiteColor;
+    self.openPaletteButton.layer.masksToBounds = NO;
+    self.openPaletteButton.layer.cornerRadius = 10;
+    self.openPaletteButton.layer.shadowColor = [UIColor.blackColor colorWithAlphaComponent:0.25].CGColor;
+    self.openPaletteButton.layer.shadowRadius = 2.0;
+    self.openPaletteButton.layer.shadowOffset = CGSizeZero;
+    self.openPaletteButton.layer.shadowOpacity = 1.0;
+    [self.openPaletteButton setTitleColor:self.lightGreenSea forState:UIControlStateNormal];
+    
+    self.openTimerButton.backgroundColor = UIColor.whiteColor;
+    self.openTimerButton.layer.masksToBounds = NO;
+    self.openTimerButton.layer.cornerRadius = 10;
+    self.openTimerButton.layer.shadowColor = [UIColor.blackColor colorWithAlphaComponent:0.25].CGColor;
+    self.openTimerButton.layer.shadowRadius = 2.0;
+    self.openTimerButton.layer.shadowOffset = CGSizeZero;
+    self.openTimerButton.layer.shadowOpacity = 1.0;
+    [self.openTimerButton setTitleColor:self.lightGreenSea forState:UIControlStateNormal];
+    
+    self.drawButton.backgroundColor = UIColor.whiteColor;
+    self.drawButton.layer.masksToBounds = NO;
+    self.drawButton.layer.cornerRadius = 10;
+    self.drawButton.layer.shadowColor = [UIColor.blackColor colorWithAlphaComponent:0.25].CGColor;
+    self.drawButton.layer.shadowRadius = 2.0;
+    self.drawButton.layer.shadowOffset = CGSizeZero;
+    self.drawButton.layer.shadowOpacity = 1.0;
+    [self.drawButton setTitleColor:self.lightGreenSea forState:UIControlStateNormal];
+    
+    self.shareButton.backgroundColor = UIColor.whiteColor;
+    self.shareButton.layer.masksToBounds = NO;
+    self.shareButton.layer.cornerRadius = 10;
+    self.shareButton.layer.shadowColor = [UIColor.blackColor colorWithAlphaComponent:0.25].CGColor;
+    self.shareButton.layer.shadowRadius = 2.0;
+    self.shareButton.layer.shadowOffset = CGSizeZero;
+    self.shareButton.layer.shadowOpacity = 1.0;
+    [self.shareButton setTitleColor:self.lightGreenSea forState:UIControlStateNormal];
+    
+    
+}
 //MARK: NavigationBarStyles
 -(void)settingsNavBar {
     UILabel *label = [[UILabel alloc] initWithFrame:CGRectZero];
@@ -68,7 +125,7 @@
     
     self.title = @"Artist";
     
-    NSAttributedString *string = [[NSAttributedString alloc] initWithString:@"Drawings" attributes:@{ NSForegroundColorAttributeName: [UIColor greenColor] }];
+    NSAttributedString *string = [[NSAttributedString alloc] initWithString:@"Drawings" attributes:@{ NSForegroundColorAttributeName: self.lightGreenSea }];
     [self.rightNavButton setAttributedTitle:string forState:UIControlStateNormal];
 }
 @end
