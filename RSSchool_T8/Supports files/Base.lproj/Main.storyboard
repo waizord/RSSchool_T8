@@ -17,54 +17,6 @@
         </array>
     </customFonts>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="yk0-Mx-B4B">
-            <objects>
-                <viewController id="Gmd-Mz-wvS" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="KW7-GO-qTA">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iLh-56-Ylx">
-                                <rect key="frame" x="250" y="353.5" width="85" height="32"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="32" id="1my-yP-Dqo"/>
-                                    <constraint firstAttribute="width" constant="85" id="bm3-DT-hkj"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="18"/>
-                                <state key="normal" title="Save"/>
-                            </button>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="l6i-71-SeP"/>
-                        <color key="backgroundColor" systemColor="systemGreenColor"/>
-                        <constraints>
-                            <constraint firstItem="l6i-71-SeP" firstAttribute="bottom" secondItem="iLh-56-Ylx" secondAttribute="bottom" constant="281.5" id="QUZ-hj-PEL"/>
-                            <constraint firstItem="l6i-71-SeP" firstAttribute="trailing" secondItem="iLh-56-Ylx" secondAttribute="trailing" constant="40" id="r9H-oJ-9T3"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" id="pas-xn-fu0"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="AN9-Xb-qaw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="309.60000000000002" y="1030.4347826086957"/>
-        </scene>
-        <!--Timer View Controller-->
-        <scene sceneID="0v6-UX-jqX">
-            <objects>
-                <viewController id="18M-2r-kiB" customClass="TimerViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="C3U-an-hc6">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="aqz-Ym-mVr"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="fHZ-1O-fw2"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="1JK-As-2g2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1002" y="1032"/>
-        </scene>
         <!--Navigation Controller-->
         <scene sceneID="DrJ-6Q-Rbr">
             <objects>
@@ -128,7 +80,6 @@
                                 <state key="normal" title="Open Timer"/>
                                 <connections>
                                     <action selector="openTimerView:" destination="ONr-Cw-x46" eventType="touchUpInside" id="6Mf-7P-fl3"/>
-                                    <segue destination="18M-2r-kiB" kind="presentation" id="YN6-IA-lN5"/>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wBc-Xi-hhQ">
@@ -282,9 +233,6 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemGreenColor">
-            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemOrangeColor">
             <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

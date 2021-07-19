@@ -58,8 +58,10 @@
     NSLog(@"Tap");
 }
 - (IBAction)openTimerView:(id)sender {
-//    TimerViewController *timerVC = [[TimerViewController alloc] init];
-//    [self addChildViewController:timerVC];
+    TimerViewController *timerVC = [[TimerViewController alloc] init];
+    timerVC.transitioningDelegate = self;
+    timerVC.modalPresentationStyle = UIModalPresentationCustom;
+    [self presentViewController:timerVC animated:YES completion:nil];
 }
 - (IBAction)showDravingsView:(id)sender {
     NSLog(@"show");
