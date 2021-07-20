@@ -115,6 +115,9 @@
     self.shareButton.layer.shadowOffset = CGSizeZero;
     self.shareButton.layer.shadowOpacity = 1.0;
     [self.shareButton setTitleColor:self.lightGreenSea forState:UIControlStateNormal];
+    
+    [self.shareButton setAlpha:0.5];
+    [self.shareButton setEnabled:NO];
 }
 
 -(void) canvasStyle {
