@@ -81,8 +81,6 @@
     self.landscapeButton.layer.shadowOffset = CGSizeZero;
     self.landscapeButton.layer.shadowOpacity = 1.0;
     [self.landscapeButton setTitleColor:self.lightGreenSea forState:UIControlStateNormal];
-    
-    
 }
 
 //MARK: NavigationBarStyles

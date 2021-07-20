@@ -159,9 +159,6 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="18"/>
                                 <state key="normal" title="Planet"/>
-                                <connections>
-                                    <action selector="pictureSelectTag:" destination="c0j-It-rMS" eventType="touchUpInside" id="rfN-Qb-yb4"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5qY-we-x9m">
                                 <rect key="frame" x="87.5" y="105" width="200" height="40"/>
@@ -172,9 +169,6 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="18"/>
                                 <state key="normal" title="Head"/>
-                                <connections>
-                                    <action selector="pictureSelectTag:" destination="c0j-It-rMS" eventType="touchUpInside" id="MfB-FQ-mEZ"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aRa-hT-tEm">
                                 <rect key="frame" x="87.5" y="160" width="200" height="40"/>
@@ -185,9 +179,6 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="18"/>
                                 <state key="normal" title="Tree"/>
-                                <connections>
-                                    <action selector="pictureSelectTag:" destination="c0j-It-rMS" eventType="touchUpInside" id="YnN-fq-IvE"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dd9-gm-VKb">
                                 <rect key="frame" x="87.5" y="215" width="200" height="40"/>
@@ -198,9 +189,6 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="18"/>
                                 <state key="normal" title="Landscape"/>
-                                <connections>
-                                    <action selector="pictureSelectTag:" destination="c0j-It-rMS" eventType="touchUpInside" id="ACU-Ah-cwM"/>
-                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="0vp-Rk-04B"/>
@@ -217,12 +205,6 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="vAD-3v-VEb"/>
-                    <connections>
-                        <outlet property="headButton" destination="5qY-we-x9m" id="N1p-Gw-zcF"/>
-                        <outlet property="landscapeButton" destination="Dd9-gm-VKb" id="eGm-kU-DCH"/>
-                        <outlet property="planetButton" destination="hKs-Nq-RCj" id="mBJ-WA-QNP"/>
-                        <outlet property="treeButton" destination="aRa-hT-tEm" id="RYz-IY-0l7"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="56Q-Oz-exx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
