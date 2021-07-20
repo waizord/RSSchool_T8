@@ -8,6 +8,13 @@
 #import "TimerViewController.h"
 
 @interface TimerViewController ()
+@property (nonatomic, strong)  UIButton *saveButton;
+@property (nonatomic, strong)  UISlider *sliderView;
+
+@property (nonatomic, strong)  UILabel *sliderLeftLabel;
+@property (nonatomic, strong)  UILabel *sliderRightLabel;
+@property (nonatomic, strong)  UILabel *sliderBotomLabel;
+
 @property (nonatomic, readonly) UIColor *lightGreenSea;
 @property (nonatomic, readonly) UIColor *chillSky;
 @end
@@ -37,16 +44,60 @@
     button.layer.shadowOffset = CGSizeZero;
     button.layer.shadowOpacity = 1.0;
     [button setTitleColor:self.lightGreenSea forState:UIControlStateNormal];
-    
-    // Add an action in current code file (i.e. target)
+  
     [button addTarget:self action:@selector(buttonPressed:)
          forControlEvents:UIControlEventTouchUpInside];
     return button;
 }
 
+- (UISlider *)sliderView {
+    UISlider *slider = [[UISlider alloc] initWithFrame:CGRectMake(0, 0, 223.0, 4.0)];
+    slider.center = CGPointMake(111.5 + 74.0, 114);
+    slider.minimumValue = 1.0;
+    slider.maximumValue = 5.0;
+    slider.tintColor = self.lightGreenSea;
+    [slider addTarget:self action:@selector(sliderChange:) forControlEvents:UIControlEventValueChanged];
+    return slider;
+}
+- (UILabel *)sliderLeftLabel {
+    UILabel *label = [UILabel new];
+    label.center = CGPointMake(29.5, 103.0);
+    [label setFont:[UIFont fontWithName:@"Montserrat-Regular" size:18]];
+    [label setTextColor:UIColor.blackColor];
+    label.text = @"1";
+    [label sizeToFit];
+    return label;
+}
+- (UILabel *)sliderRightLabel {
+    UILabel *label = [UILabel new];
+    label.center = CGPointMake(338.0 + 5.5, 103.0);
+    [label setFont:[UIFont fontWithName:@"Montserrat-Regular" size:18]];
+    [label setTextColor:UIColor.blackColor];
+    label.text = @"5";
+    [label sizeToFit];
+    return label;
+}
+- (UILabel *)sliderBotomLabel {
+    UILabel *label = [UILabel new];
+    label.center = CGPointMake(162.0, 161.0);
+    [label setFont:[UIFont fontWithName:@"Montserrat-Regular" size:18]];
+    [label setTextColor:UIColor.blackColor];
+    label.text = [[NSString alloc]initWithFormat:@"%f.2", self.sliderView.value];
+    [label sizeToFit];
+    return label;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
+//    [self viewStyle];
+//    [self buttonsStyle];
     
+//    _sliderBotomLabel = [UILabel new];
+//    _sliderBotomLabel.center = CGPointMake(162.0, 161.0);
+//    [_sliderBotomLabel setFont:[UIFont fontWithName:@"Montserrat-Regular" size:18]];
+//    [_sliderBotomLabel setTextColor:UIColor.blackColor];
+//    _sliderBotomLabel.text = [[NSString alloc]initWithFormat:@"%f.2", self.sliderView.value];
+//    [_sliderBotomLabel sizeToFit];
     //[self.view addSubview:self.saveButton];
 }
 
@@ -56,8 +107,6 @@
     
     [self viewStyle];
     [self buttonsStyle];
-    
-    [self.view addSubview:self.saveButton];
 }
 //MARK: - Styles
 -(void) viewStyle {
@@ -71,10 +120,23 @@
 }
 
 -(void) buttonsStyle {
+    
+    [self.view addSubview:self.sliderView];
+    [self.view addSubview:self.sliderLeftLabel];
+    [self.view addSubview:self.sliderRightLabel];
+    [self.view addSubview:self.sliderBotomLabel];
+    [self.view addSubview:self.saveButton];
 }
 //MARK: - Actions
 - (void)buttonPressed:(UIButton *)button {
      NSLog(@"Button Pressed");
     [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+- (void)sliderChange: (UISlider*) slider {
+    NSLog(@"%f", slider.value);
+    self.sliderBotomLabel.text = [NSString stringWithFormat:@"%f", slider.value];
+    NSLog(@"Label @%@", self.sliderBotomLabel.text );
+    
 }
 @end

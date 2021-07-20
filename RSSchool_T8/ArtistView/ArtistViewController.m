@@ -7,6 +7,7 @@
 
 #import "ArtistViewController.h"
 #import "PaletteViewController.h"
+#import "RSSchool_T8-Swift.h"
 #import "DrawingsViewController.h"
 #import "TimerViewController.h"
 #import "HalfSizePresentationController.h"
@@ -18,6 +19,8 @@
 @property (weak, nonatomic) IBOutlet UIButton *drawButton;
 @property (weak, nonatomic) IBOutlet UIButton *shareButton;
 @property (weak, nonatomic) IBOutlet UIButton *rightNavButton;
+
+@property (strong, nonatomic) DrawingsVC *drawingsVC;
 
 @property (nonatomic, readwrite) UIView *canvasDrawView;
 
@@ -67,8 +70,8 @@
 }
 - (IBAction)showDravingsView:(id)sender {
     NSLog(@"show");
-//    DrawingsViewController *drawVC = [[DrawingsViewController alloc] init];
-//    [self.navigationController popToViewController:drawVC animated:YES];
+    self.drawingsVC = [[DrawingsVC alloc] initWithNibName:@"DrawingsVC" bundle:nil];
+    [self showViewController:self.drawingsVC sender:nil];
 }
 //MARK: - Delegates
 -(UIPresentationController *)presentationControllerForPresentedViewController:(UIViewController *)presented presentingViewController:(UIViewController *)presenting sourceViewController:(UIViewController *)source {
