@@ -53,7 +53,7 @@
 
 //MARK: - Actions
 - (IBAction)openPaletteView:(id)sender {
-    PaletteViewController *paletteVC = [[PaletteViewController alloc] init];
+    PaletteViewController *paletteVC = [[PaletteViewController alloc] initWithNibName:@"PaletteViewController" bundle:nil];
     paletteVC.transitioningDelegate = self;
     paletteVC.modalPresentationStyle = UIModalPresentationCustom;
     [self presentViewController:paletteVC animated:YES completion:nil];
@@ -62,14 +62,10 @@
     NSLog(@"Tap");
 }
 - (IBAction)openTimerView:(id)sender {
-    self.timerVC = [[TimerVC alloc] init];
+    self.timerVC = [[TimerVC alloc] initWithNibName:@"TimerVC" bundle:nil];
     self.timerVC.transitioningDelegate = self;
     self.timerVC.modalPresentationStyle = UIModalPresentationCustom;
     [self presentViewController:self.timerVC animated:YES completion:nil];
-//    TimerViewController *timerVC = [[TimerViewController alloc] init];
-//    timerVC.transitioningDelegate = self;
-//    timerVC.modalPresentationStyle = UIModalPresentationCustom;
-//    [self presentViewController:timerVC animated:YES completion:nil];
 }
 - (IBAction)showDravingsView:(id)sender {
     NSLog(@"show");

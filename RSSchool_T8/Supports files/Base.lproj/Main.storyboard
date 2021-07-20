@@ -102,7 +102,7 @@
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="hYl-c2-EPM"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="hYl-c2-EPM" firstAttribute="trailing" secondItem="f8D-if-yKG" secondAttribute="trailing" constant="41" id="3Ya-SQ-SX2"/>
                             <constraint firstItem="ifC-Ez-Kyl" firstAttribute="top" secondItem="hdB-YD-fxC" secondAttribute="bottom" constant="20" id="MRW-5N-Bhr"/>
@@ -192,7 +192,7 @@
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="0vp-Rk-04B"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="5qY-we-x9m" firstAttribute="centerX" secondItem="nHE-hN-zbX" secondAttribute="centerX" id="9yj-Dk-mU5"/>
                             <constraint firstItem="aRa-hT-tEm" firstAttribute="centerX" secondItem="nHE-hN-zbX" secondAttribute="centerX" id="GJZ-0Y-nD3"/>
@@ -212,9 +212,6 @@
         </scene>
     </scenes>
     <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
         <systemColor name="systemOrangeColor">
             <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
