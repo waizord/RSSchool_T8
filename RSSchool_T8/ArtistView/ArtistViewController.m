@@ -8,7 +8,6 @@
 #import "ArtistViewController.h"
 #import "PaletteViewController.h"
 #import "RSSchool_T8-Swift.h"
-#import "DrawingsViewController.h"
 #import "TimerViewController.h"
 #import "HalfSizePresentationController.h"
 
