@@ -8,9 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		2C47050126A333D3009E36D2 /* PaletteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C47050026A333D3009E36D2 /* PaletteViewController.m */; };
-		2C47050F26A34B73009E36D2 /* TimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C47050E26A34B73009E36D2 /* TimerViewController.m */; };
 		2C48513726A6C9CD00A9C750 /* DrawingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C48513626A6C9CD00A9C750 /* DrawingsVC.swift */; };
 		2C48513A26A6D6D700A9C750 /* DrawingsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C48513926A6D6D700A9C750 /* DrawingsVC.xib */; };
+		2C48514926A7237900A9C750 /* TimerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C48514726A7237800A9C750 /* TimerVC.swift */; };
+		2C48514A26A7237900A9C750 /* TimerVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C48514826A7237900A9C750 /* TimerVC.xib */; };
 		2C5A93AD26A4637E00AA0AFF /* HalfSizePresentationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C5A93AC26A4637E00AA0AFF /* HalfSizePresentationController.m */; };
 		2C60ACE226A1C8FD00FB0F17 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C60ACE126A1C8FD00FB0F17 /* AppDelegate.m */; };
 		2C60ACE826A1C8FD00FB0F17 /* ArtistViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C60ACE726A1C8FD00FB0F17 /* ArtistViewController.m */; };
@@ -25,11 +26,11 @@
 /* Begin PBXFileReference section */
 		2C4704FF26A333D3009E36D2 /* PaletteViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PaletteViewController.h; sourceTree = "<group>"; };
 		2C47050026A333D3009E36D2 /* PaletteViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PaletteViewController.m; sourceTree = "<group>"; };
-		2C47050D26A34B73009E36D2 /* TimerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TimerViewController.h; sourceTree = "<group>"; };
-		2C47050E26A34B73009E36D2 /* TimerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TimerViewController.m; sourceTree = "<group>"; };
 		2C48513626A6C9CD00A9C750 /* DrawingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingsVC.swift; sourceTree = "<group>"; };
 		2C48513926A6D6D700A9C750 /* DrawingsVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DrawingsVC.xib; sourceTree = "<group>"; };
 		2C48514326A6F0E200A9C750 /* RSSchool_T8-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RSSchool_T8-Bridging-Header.h"; sourceTree = "<group>"; };
+		2C48514726A7237800A9C750 /* TimerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerVC.swift; sourceTree = "<group>"; };
+		2C48514826A7237900A9C750 /* TimerVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TimerVC.xib; sourceTree = "<group>"; };
 		2C5A93AB26A4637E00AA0AFF /* HalfSizePresentationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HalfSizePresentationController.h; sourceTree = "<group>"; };
 		2C5A93AC26A4637E00AA0AFF /* HalfSizePresentationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HalfSizePresentationController.m; sourceTree = "<group>"; };
 		2C60ACDD26A1C8FD00FB0F17 /* RSSchool_T8.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RSSchool_T8.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -81,8 +82,8 @@
 		2C47051426A38359009E36D2 /* TimerView */ = {
 			isa = PBXGroup;
 			children = (
-				2C47050D26A34B73009E36D2 /* TimerViewController.h */,
-				2C47050E26A34B73009E36D2 /* TimerViewController.m */,
+				2C48514726A7237800A9C750 /* TimerVC.swift */,
+				2C48514826A7237900A9C750 /* TimerVC.xib */,
 			);
 			path = TimerView;
 			sourceTree = "<group>";
@@ -215,6 +216,7 @@
 			files = (
 				2C60ACF026A1C90000FB0F17 /* LaunchScreen.storyboard in Resources */,
 				2C60ACED26A1C90000FB0F17 /* Assets.xcassets in Resources */,
+				2C48514A26A7237900A9C750 /* TimerVC.xib in Resources */,
 				2C60AD0026A1D21400FB0F17 /* Montserrat-Medium.ttf in Resources */,
 				2C48513A26A6D6D700A9C750 /* DrawingsVC.xib in Resources */,
 				2C60AD0126A1D21400FB0F17 /* Montserrat-Regular.ttf in Resources */,
@@ -230,7 +232,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2C5A93AD26A4637E00AA0AFF /* HalfSizePresentationController.m in Sources */,
-				2C47050F26A34B73009E36D2 /* TimerViewController.m in Sources */,
+				2C48514926A7237900A9C750 /* TimerVC.swift in Sources */,
 				2C47050126A333D3009E36D2 /* PaletteViewController.m in Sources */,
 				2C48513726A6C9CD00A9C750 /* DrawingsVC.swift in Sources */,
 				2C60ACE826A1C8FD00FB0F17 /* ArtistViewController.m in Sources */,

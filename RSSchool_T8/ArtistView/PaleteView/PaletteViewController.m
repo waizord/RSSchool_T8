@@ -70,6 +70,11 @@
     self.view.layer.shadowOpacity = 1;
     self.view.layer.shadowOffset = CGSizeMake(0.0, 0.0);
     
+    UIView *viewSap = [[UIView alloc] initWithFrame: CGRectMake(0, (self.view.bounds.size.height / 2.0) - 40, self.view.bounds.size.width, 40.0)];
+    viewSap.backgroundColor = UIColor.whiteColor;
+    [self.view addSubview: viewSap];
+    
+    
 }
 
 -(void) buttonsStyle {

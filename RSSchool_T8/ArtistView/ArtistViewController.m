@@ -8,7 +8,6 @@
 #import "ArtistViewController.h"
 #import "PaletteViewController.h"
 #import "RSSchool_T8-Swift.h"
-#import "TimerViewController.h"
 #import "HalfSizePresentationController.h"
 
 @interface ArtistViewController () <UIViewControllerTransitioningDelegate>
@@ -20,6 +19,7 @@
 @property (weak, nonatomic) IBOutlet UIButton *rightNavButton;
 
 @property (strong, nonatomic) DrawingsVC *drawingsVC;
+@property (strong, nonatomic) TimerVC *timerVC;
 
 @property (nonatomic, readwrite) UIView *canvasDrawView;
 
@@ -62,10 +62,14 @@
     NSLog(@"Tap");
 }
 - (IBAction)openTimerView:(id)sender {
-    TimerViewController *timerVC = [[TimerViewController alloc] init];
-    timerVC.transitioningDelegate = self;
-    timerVC.modalPresentationStyle = UIModalPresentationCustom;
-    [self presentViewController:timerVC animated:YES completion:nil];
+    self.timerVC = [[TimerVC alloc] init];
+    self.timerVC.transitioningDelegate = self;
+    self.timerVC.modalPresentationStyle = UIModalPresentationCustom;
+    [self presentViewController:self.timerVC animated:YES completion:nil];
+//    TimerViewController *timerVC = [[TimerViewController alloc] init];
+//    timerVC.transitioningDelegate = self;
+//    timerVC.modalPresentationStyle = UIModalPresentationCustom;
+//    [self presentViewController:timerVC animated:YES completion:nil];
 }
 - (IBAction)showDravingsView:(id)sender {
     NSLog(@"show");
