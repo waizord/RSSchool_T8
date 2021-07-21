@@ -43,14 +43,12 @@
 @property (nonatomic, strong) UIView *viewSap;
 
 @property (nonatomic, strong) NSMutableArray *colorArray;
+@property (nonatomic, strong) NSMutableArray *buttonArray;
 
 @end
 
 @implementation PaletteViewController
 
-//- (NSMutableArray *)colorArray {
-//    return self.colorArray = [NSMutableArray array];
-//}
 //MARK: Constant colors
 - (UIColor *)lightGreenSea {
     return [[UIColor alloc] initWithRed:0.13 green:0.692 blue:0.557 alpha:1];
@@ -105,6 +103,7 @@
     [super viewWillAppear:true];
     
     self.colorArray = [NSMutableArray array];
+    self.buttonArray = [NSMutableArray array];
     
     [self viewStyle];
     [self buttonsStyle];
@@ -173,20 +172,28 @@
     return layer;
 }
     //MARK: Change color
+-(void) savedViewColor {
+    if (self.colorArray != 0) {
+        self.view.backgroundColor = [self.colorArray lastObject];
+    } else {
+        self.view.backgroundColor = UIColor.whiteColor;
+    }
+}
 -(void) changeViewColor: (UIColor *) color {
     self.view.backgroundColor = color;
     self.viewSap.backgroundColor = color;
 }
 -(void) changeButtonColor: (UIButton *) button :(UIColor *) color {
-    if (self.colorArray.count == 3 && ![self.colorArray containsObject:button]) {
-        UIButton *dropButton = [self.colorArray objectAtIndex:0];
+    if (self.buttonArray.count == 3 && ![self.buttonArray containsObject:button]) {
+        UIButton *dropButton = [self.buttonArray objectAtIndex:0];
         dropButton.backgroundColor = UIColor.whiteColor;
+        [self.buttonArray removeObjectAtIndex:0];
         [self.colorArray removeObjectAtIndex:0];
     }
-    if (![self.colorArray containsObject:button]) {
-        [self.colorArray addObject:button];
+    if (![self.buttonArray containsObject:button]) {
+        [self.buttonArray addObject:button];
+        [self.colorArray addObject:color];
     }
-    NSLog(@"%@", self.colorArray);
     button.backgroundColor = color;
     
 }
