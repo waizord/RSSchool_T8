@@ -59,8 +59,9 @@ class TimerVC: UIViewController {
         
     }
     @IBAction func tapSave(_ sender: UIButton) {
-        self.dismiss(animated: true, completion: nil)
         print("save")
+        self.dismiss(animated: true, completion: nil)
+        
     }
     @IBAction func changeSlider(_ sender: UISlider) {
         print(sender.value)

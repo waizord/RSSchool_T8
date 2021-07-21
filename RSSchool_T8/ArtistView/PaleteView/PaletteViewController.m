@@ -110,9 +110,9 @@
     self.view.layer.shadowOpacity = 1;
     self.view.layer.shadowOffset = CGSizeMake(0.0, 0.0);
     
-    UIView *viewSap = [[UIView alloc] initWithFrame: CGRectMake(0, (self.view.bounds.size.height / 2.0) - 40, self.view.bounds.size.width, 40.0)];
-    viewSap.backgroundColor = UIColor.whiteColor;
-    [self.view addSubview: viewSap];
+    self.viewSap = [[UIView alloc] initWithFrame: CGRectMake(0, (self.view.bounds.size.height / 2.0) - 40, self.view.bounds.size.width, 40.0)];
+    self.viewSap.backgroundColor = UIColor.whiteColor;
+    [self.view addSubview: self.viewSap];
 }
 
 -(void) buttonsStyle {
@@ -164,13 +164,74 @@
     layer.fillColor = color.CGColor;
     return layer;
 }
+    //MARK: Change color
+-(void) changeViewColor: (UIColor *) color {
+    self.view.backgroundColor = color;
+    self.viewSap.backgroundColor = color;
+}
+-(void) changeButtonColor: (UIButton *) button :(UIColor *) color {
+    button.backgroundColor = color;
+}
 //MARK: - Actions
 - (void)saveButtonPressed:(UIButton *)button {
-     NSLog(@"Button Pressed");
+     NSLog(@"save");
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 - (IBAction)selectColor:(UIButton *)sender {
     NSLog(@"%lu", sender.tag);
+    switch (sender.tag) {
+        case 1:
+            [self changeButtonColor:sender :self.red];
+            [self changeViewColor:self.red];
+            break;
+        case 2:
+            [self changeButtonColor:sender :self.blue];
+            [self changeViewColor:self.blue];
+            break;
+        case 3:
+            [self changeButtonColor:sender :self.green];
+            [self changeViewColor:self.green];
+            break;
+        case 4:
+            [self changeButtonColor:sender :self.gray];
+            [self changeViewColor:self.gray];
+            break;
+        case 5:
+            [self changeButtonColor:sender :self.purp];
+            [self changeViewColor:self.purp];
+            break;
+        case 6:
+            [self changeButtonColor:sender :self.lightRed];
+            [self changeViewColor:self.lightRed];
+            break;
+        case 7:
+            [self changeButtonColor:sender :self.orange];
+            [self changeViewColor:self.orange];
+            break;
+        case 8:
+            [self changeButtonColor:sender :self.lightBlue];
+            [self changeViewColor:self.lightBlue];
+            break;
+        case 9:
+            [self changeButtonColor:sender :self.pink];
+            [self changeViewColor:self.pink];
+            break;
+        case 10:
+            [self changeButtonColor:sender :self.darkBlue];
+            [self changeViewColor:self.darkBlue];
+            break;
+        case 11:
+            [self changeButtonColor:sender :self.darkGreen];
+            [self changeViewColor:self.darkGreen];
+            break;
+        case 12:
+            [self changeButtonColor:sender :self.brown];
+            [self changeViewColor:self.brown];
+            break;
+        default:
+            NSLog(@"Error color buttons");
+            break;
+    }
     
 }
 

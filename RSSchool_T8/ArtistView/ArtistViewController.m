@@ -68,7 +68,6 @@
     [self presentViewController:self.timerVC animated:YES completion:nil];
 }
 - (IBAction)showDravingsView:(id)sender {
-    NSLog(@"show");
     self.drawingsVC = [[DrawingsVC alloc] initWithNibName:@"DrawingsVC" bundle:nil];
     [self showViewController:self.drawingsVC sender:nil];
 }
