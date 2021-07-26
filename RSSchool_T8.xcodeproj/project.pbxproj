@@ -13,6 +13,7 @@
 		2C48514926A7237900A9C750 /* TimerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C48514726A7237800A9C750 /* TimerVC.swift */; };
 		2C48514A26A7237900A9C750 /* TimerVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C48514826A7237900A9C750 /* TimerVC.xib */; };
 		2C48515226A74EBA00A9C750 /* PaletteViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C48515126A74EB900A9C750 /* PaletteViewController.xib */; };
+		2C50188226AD216E0091441A /* CanvasView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C50188126AD216E0091441A /* CanvasView.m */; };
 		2C5A93AD26A4637E00AA0AFF /* HalfSizePresentationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C5A93AC26A4637E00AA0AFF /* HalfSizePresentationController.m */; };
 		2C60ACE226A1C8FD00FB0F17 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C60ACE126A1C8FD00FB0F17 /* AppDelegate.m */; };
 		2C60ACE826A1C8FD00FB0F17 /* ArtistViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C60ACE726A1C8FD00FB0F17 /* ArtistViewController.m */; };
@@ -33,6 +34,8 @@
 		2C48514826A7237900A9C750 /* TimerVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TimerVC.xib; sourceTree = "<group>"; };
 		2C48514D26A743E200A9C750 /* RSSchool_T8-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RSSchool_T8-Bridging-Header.h"; sourceTree = "<group>"; };
 		2C48515126A74EB900A9C750 /* PaletteViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PaletteViewController.xib; sourceTree = "<group>"; };
+		2C50188026AD216E0091441A /* CanvasView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CanvasView.h; sourceTree = "<group>"; };
+		2C50188126AD216E0091441A /* CanvasView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CanvasView.m; sourceTree = "<group>"; };
 		2C5A93AB26A4637E00AA0AFF /* HalfSizePresentationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HalfSizePresentationController.h; sourceTree = "<group>"; };
 		2C5A93AC26A4637E00AA0AFF /* HalfSizePresentationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HalfSizePresentationController.m; sourceTree = "<group>"; };
 		2C60ACDD26A1C8FD00FB0F17 /* RSSchool_T8.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RSSchool_T8.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -65,6 +68,8 @@
 			children = (
 				2C60ACE626A1C8FD00FB0F17 /* ArtistViewController.h */,
 				2C60ACE726A1C8FD00FB0F17 /* ArtistViewController.m */,
+				2C50188026AD216E0091441A /* CanvasView.h */,
+				2C50188126AD216E0091441A /* CanvasView.m */,
 				2C47051326A38354009E36D2 /* PaleteView */,
 				2C47051426A38359009E36D2 /* TimerView */,
 				2C5A93AF26A4AE0A00AA0AFF /* CustomClasses */,
@@ -241,6 +246,7 @@
 				2C48513726A6C9CD00A9C750 /* DrawingsVC.swift in Sources */,
 				2C60ACE826A1C8FD00FB0F17 /* ArtistViewController.m in Sources */,
 				2C60ACE226A1C8FD00FB0F17 /* AppDelegate.m in Sources */,
+				2C50188226AD216E0091441A /* CanvasView.m in Sources */,
 				2C60ACF326A1C90000FB0F17 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

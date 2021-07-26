@@ -184,18 +184,33 @@
     self.viewSap.backgroundColor = color;
 }
 -(void) changeButtonColor: (UIButton *) button :(UIColor *) color {
+    
+    
     if (self.buttonArray.count == 3 && ![self.buttonArray containsObject:button]) {
         UIButton *dropButton = [self.buttonArray objectAtIndex:0];
         dropButton.backgroundColor = UIColor.whiteColor;
+        [self changeViewColor:UIColor.whiteColor];
+        
         [self.buttonArray removeObjectAtIndex:0];
         [self.colorArray removeObjectAtIndex:0];
     }
+    
     if (![self.buttonArray containsObject:button]) {
+        
         [self.buttonArray addObject:button];
         [self.colorArray addObject:color];
+        
+        button.backgroundColor = color;
+        [self changeViewColor:color];
+    }else {
+        [self.buttonArray removeObject:button];
+        [self.colorArray removeObject:color];
+
+        button.backgroundColor = UIColor.whiteColor;
+        [self changeViewColor:UIColor.whiteColor];
+
     }
-    button.backgroundColor = color;
-    
+    NSLog(@"%@", _buttonArray);
 }
 //MARK: - Actions
 - (void)saveButtonPressed:(UIButton *)button {
@@ -208,51 +223,51 @@
     switch (sender.tag) {
         case 1:
             [self changeButtonColor:sender :self.red];
-            [self changeViewColor:self.red];
+            //[self changeViewColor:self.red];
             break;
         case 2:
             [self changeButtonColor:sender :self.blue];
-            [self changeViewColor:self.blue];
+            //[self changeViewColor:self.blue];
             break;
         case 3:
             [self changeButtonColor:sender :self.green];
-            [self changeViewColor:self.green];
+            //[self changeViewColor:self.green];
             break;
         case 4:
             [self changeButtonColor:sender :self.gray];
-            [self changeViewColor:self.gray];
+            //[self changeViewColor:self.gray];
             break;
         case 5:
             [self changeButtonColor:sender :self.purp];
-            [self changeViewColor:self.purp];
+            //[self changeViewColor:self.purp];
             break;
         case 6:
             [self changeButtonColor:sender :self.lightRed];
-            [self changeViewColor:self.lightRed];
+            //[self changeViewColor:self.lightRed];
             break;
         case 7:
             [self changeButtonColor:sender :self.orange];
-            [self changeViewColor:self.orange];
+            //[self changeViewColor:self.orange];
             break;
         case 8:
             [self changeButtonColor:sender :self.lightBlue];
-            [self changeViewColor:self.lightBlue];
+            //[self changeViewColor:self.lightBlue];
             break;
         case 9:
             [self changeButtonColor:sender :self.pink];
-            [self changeViewColor:self.pink];
+            //[self changeViewColor:self.pink];
             break;
         case 10:
             [self changeButtonColor:sender :self.darkBlue];
-            [self changeViewColor:self.darkBlue];
+            //[self changeViewColor:self.darkBlue];
             break;
         case 11:
             [self changeButtonColor:sender :self.darkGreen];
-            [self changeViewColor:self.darkGreen];
+            //[self changeViewColor:self.darkGreen];
             break;
         case 12:
             [self changeButtonColor:sender :self.brown];
-            [self changeViewColor:self.brown];
+            //[self changeViewColor:self.brown];
             break;
         default:
             NSLog(@"Error color buttons");
